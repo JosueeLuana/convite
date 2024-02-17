@@ -139,8 +139,7 @@ a.slide_btn {
 
 }
 
-@media(max-width:400px){
-  .slider .subtitulo{
-    font: 3rem "HighSpirited", sans-serif !important; 
-  }
+.slider .subtitulo{
+  font: 3rem "HighSpirited", sans-serif !important; 
 }
+
