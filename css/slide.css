@@ -1,9 +1,10 @@
 .slider {
-  padding-top: 300px;
+  padding-top: 200px;
   margin: 0 auto;
  max-width: 1200px;
  position: relative;
  padding-bottom: 50px;
+ 
 
  
 }
@@ -132,8 +133,9 @@ a.slide_btn {
 }
 
 .slider p:nth-child(2){
-  padding-bottom: 50px;
+  padding: 30px 20px 50px 20px;
 
+  
 
 }
 
