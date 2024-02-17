@@ -90,6 +90,10 @@
  
 }
 
+.titulo-modal p {
+  padding-bottom: 20px;
+}
+
 .modal-content{
   background-color: transparent;
   border: none;
@@ -172,7 +176,7 @@ margin-top: 60px;
  }
 
  #modal3 .modal-container::before {
-  background-image: url("../img/check.svg");
+  background-image: url("../img/gravata.svg");
  }
  #modalBtn .modal-container::before {
   background-image: url("../img/presentes.svg");
