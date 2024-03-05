@@ -2,19 +2,23 @@
 
 
 .abrir{
-    background-color: white;
+    background: white;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 2;
+    z-index: 200;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #1D949C;
+    color: #81948B;
     top: 0px;
     left: 0px;
-    
+}
+
+.abrir p {
+    font: 5em "HighSpirited", sans-serif !important;
+    padding-bottom: 20px;
 }
 
 .abrir button{
@@ -23,7 +27,15 @@
     align-items: center;
     border: none;
     background: transparent;
-    color: #1D949C;
+    color: #81948B;
+    
+
+}
+
+.container_btn{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
 }
 
 .abrir.oculto{

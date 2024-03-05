@@ -16,10 +16,18 @@
 <script>
     document.documentElement.classList.add("js");
 </script>
+<div class="abrir">
+    <div class="imagem"> <img src="img/fundoabrir.jpg" class="fundo_abrir"></div>
+    <p data-anime="200">Josué e Luana</p>
+    <div class="container_btn">
+        <button class="frase font-1-400 btn-js" onclick="playaudio(), removeModal()" data-anime="600"><img src="img/convite.png">abrir convite</button>
+    </div>
+
+</div>
 
 <body>
     <div class="home">
-        <img src="img/logo.svg" class="iniciais"data-aos="fade-right">
+        <img src="img/logo.svg" class="iniciais" data-aos="fade-right">
         <!--   <span class="data font-1-300" data-aos="fade-up">28.04.2024</span> -->
         <!--         <div class="frase" data-aos="fade-up">
             <img src="./img/aspas.svg" class="aspas">
@@ -38,7 +46,7 @@
             <p class="font-1-400-m texto">"Para que todos vejam, e saibam, e considerem, e juntamente entendam que a mão do Senhor fez isto" - Isaías 41:20</p>
             <p class="font-2-a  nomes">Josué e Luana</p>
             <p class="font-1-400">
-               Convidam família e amigos para comemoração e celebração das Bodas de Cristal
+                Convidam família e amigos para comemoração e celebração das Bodas de Cristal
             </p>
         </div>
         <div class="informacoes-casamento container" data-aos="fade-up">
@@ -124,71 +132,105 @@
     </div>
     <div class="cards-container container">
         <div class="cards" data-aos="flip-left">
+            <div class="cards" data-aos="flip-left">
+                <ul>
+                    <li class="dia">Vestimenta</li>
+                    <li><img src="img/gravata.svg"></li>
+                    <button class="modal-button btn" onclick="openModal('modal3')">Ver mais</button>
+                </ul>
+            </div>
+        </div>
         <div class="cards" data-aos="flip-left">
             <ul>
-                <li class="dia">Vestimenta</li>
-                <li><img src="img/gravata.svg"></li>
-                <button class="modal-button btn" onclick="openModal('modal3')">Ver mais</button>
+                <li class="dia">Dicas e Notas</li>
+                <li><img src="img/check.svg"></li>
+
+                <button class="modal-button btn" onclick="openModal('modal2')">Ver mais</button>
             </ul>
         </div>
-    </div>
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <div class="modal-container">
-                <span class="close" onclick="closeModal('modal1')">&times;</span>
-                <input type="text" class="form-control input_musica" id="descripcionSugerencia" name="descripcion" placeholder="Nome e autor da música" required>
-                <input type="text" class="form-control sugerir_link" id="linkSugerencia" name='link' placeholder="Se desejar, insira o link da Música">
-                <p class="erro"> Informe pelo menos um campo</p>
-                <button class="btn musica_convidados">Sugerir Música</button>
-            </div>
-        </div>
-    </div>
-    <div id="modal3" class="modal modal-scroll">
-        <div class="modal-content">
-            <div class="modal-container">
-                <span class="close" onclick="closeModal('modal3')">&times;</span>
-                <div class="dicas">
-                    
-                    <ul>
-                        <h3>Aqui vai algumas dicas sobre a vestimenta:</h3>
-                        <li>
-                            1. Traje social
-                        </li>
-                    </ul>
+        <div id="modal3" class="modal modal-scroll">
+            <div class="modal-content">
+                <div class="modal-container">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <div class="dicas">
+
+                        <ul>
+                            <h3>Aqui vai algumas dicas sobre a vestimenta:</h3>
+                            <li>
+                                1. Traje social
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="modalBtn" class="modal modal-scroll">
-        <div class="modal-content">
-            <div class="modal-container">
-                <span class="close" onclick="closeModal('modalBtn')">&times;</span>
-                <div class="dicas">
-                    <h2>Nossa chave pix</h2>
-                    <ul>
-                        <h3>Operação lua de mel</h3>
-                        <li>
-                            Pix Josué: 62993159071
-                        </li>
-                        <li>
-                            Pix Luana: 03135385140
-                        </li>
-                    </ul>
+        <div id="modal2" class="modal modal-scroll">
+            <div class="modal-content">
+                <div class="modal-container">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <div class="dicas">
+
+                        <ul>
+                            <h3>Aqui vai algumas dicas:</h3>
+                            <li>
+                                1.Confirme sua presença
+                            </li>
+                            <li>
+                                2.Seja pontual
+                            </li>
+                            <li>
+                                3.Convidado não convida
+                            </li>
+                            <li>
+                                4.Evite confusões
+                            </li>
+                            <li>
+                                5.Tire foto <br>sem atrapalhar o fotógrafo
+                            </li>
+                            <li>
+                                6.Não leve itens de decoração
+                            </li>
+                            <li>
+                                7.Aproveite a festa
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="presentes">
-        <div class="titulo-modal container" data-aos="fade-up">
-             <p class="font-2-a subtitulo">Presentes</p>
-            <p class="font-1-400-m">Caso queira nos dar algo mais do que sua linda presença... </p>
-            <button class="modalBtn btn" onclick="openModal('modalBtn')">Nossa chave pix</button>
+        <div id="modalBtn" class="modal modal-scroll">
+            <div class="modal-content">
+                <div class="modal-container">
+                    <span class="close" onclick="closeModal('modalBtn')">&times;</span>
+                    <div class="dicas">
+                        <h2>Nossa chave pix</h2>
+                        <ul>
+                            <h3>Operação lua de mel</h3>
+                            <li>
+                                Pix Josué: 62993159071
+                            </li>
+                            <li>
+                                Pix Luana: 03135385140
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer class="size ">
-        Desenvolvido por <a href="https://convitecasamento.com.br/" target="_blank">N & B
-            convites digitais para casamento</a>
-    </footer>
+        <div class="presentes">
+            <div class="titulo-modal container" data-aos="fade-up">
+                <p class="font-2-a subtitulo">Presentes</p>
+                <p class="font-1-400-m">Caso queira nos dar algo mais do que sua linda presença... </p>
+                <button class="modalBtn btn" onclick="openModal('modalBtn')">Nossa chave pix</button>
+            </div>
+        </div>
+        <audio src="audio/musica.mp3" id="audio">
+
+        </audio>
+        <footer class="size ">
+            Desenvolvido por <a href="https://convitecasamento.com.br/" target="_blank">N & B
+                convites digitais para casamento</a>
+        </footer>
 
 </body>
 <script>
