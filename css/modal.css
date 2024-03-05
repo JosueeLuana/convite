@@ -174,6 +174,7 @@ margin-top: 60px;
 #modal2 .modal-container::before {
   background-image: url("../img/check.svg");
  }
+
  #modal3 .modal-container::before {
   background-image: url("../img/gravata.svg");
  }
@@ -210,6 +211,10 @@ display: none;
 .dicas{
 max-width: 400px;
 max-width: 50vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+
 }
 
 .dicas h2{
@@ -229,7 +234,7 @@ max-width: 50vw;
   font: 400 1.1rem "Roboto Slab", sans-serif;
   padding-bottom: 20px;
   color: #81948B;
-  text-align: start;
+  
   
 }
 
