@@ -172,9 +172,8 @@ margin-top: 60px;
 }
 
 #modal2 .modal-container::before {
-  background-image: url("../img/gravata.svg");
+  background-image: url("../img/check.svg");
  }
-
  #modal3 .modal-container::before {
   background-image: url("../img/gravata.svg");
  }
